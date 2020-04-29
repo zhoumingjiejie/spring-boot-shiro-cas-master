@@ -1,0 +1,17 @@
+server:
+  port: 40301
+  servlet:
+    context-path: /shiro
+
+# shiro - cas 配置
+shiro:
+  # 在访问cas服务器登录之后，会返回一个ticket。由该地址接收
+  casFilterUrlPattern: /shiro-cas
+  # cas服务前缀
+  casServerUrlPrefix: http://127.0.0.1:8080/cas
+  # shiro服务前缀：http://127.0.0.1:40301/shiro
+  shiroServerUrlPrefix: http://127.0.0.1:${server.port}${server.servlet.context-path}
+  # 登录地址:http://127.0.0.1:8080/cas/login?service=http://127.0.0.1:40301/shiro/shiro-cas
+  loginUrl: ${shiro.casServerUrlPrefix}/login?service=${shiro.shiroServerUrlPrefix}${shiro.casFilterUrlPattern}
+  # 登出地址:http://127.0.0.1:8080/cas/logout?service=http://127.0.0.1:40301/shiro/shiro-cas
+  logoutUrl: ${shiro.casServerUrlPrefix}/logout?service=${shiro.shiroServerUrlPrefix}${shiro.casFilterUrlPattern}

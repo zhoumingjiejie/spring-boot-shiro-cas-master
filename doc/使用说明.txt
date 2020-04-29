@@ -1,0 +1,4 @@
+1、搭建tomcat
+2、cas-overlay-template-5.2 打包war包放在tomcat启动
+修改数据库参考：https://www.jianshu.com/p/18e9fa55e0e9?utm_campaign=maleskine&utm_content=note&utm_medium=reader_share&utm_source=qzone
+3、启动spring boot 项目，测试地址在controller里面

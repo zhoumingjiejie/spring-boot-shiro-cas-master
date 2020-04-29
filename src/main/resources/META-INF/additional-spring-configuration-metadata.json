@@ -1,0 +1,29 @@
+{
+  "properties": [
+    {
+      "name": "shiro.casFilterUrlPattern",
+      "type": "java.lang.String",
+      "description": "Description for shiro.casFilterUrlPattern."
+    },
+    {
+      "name": "shiro.casServerUrlPrefix",
+      "type": "java.lang.String",
+      "description": "Description for shiro.casServerUrlPrefix."
+    },
+    {
+      "name": "shiro.shiroServerUrlPrefix",
+      "type": "java.lang.String",
+      "description": "Description for shiro.shiroServerUrlPrefix."
+    },
+    {
+      "name": "shiro.loginUrl",
+      "type": "java.lang.String",
+      "description": "Description for shiro.loginUrl."
+    },
+    {
+      "name": "shiro.logoutUrl",
+      "type": "java.lang.String",
+      "description": "Description for shiro.logoutUrl."
+    }
+  ]
+}
